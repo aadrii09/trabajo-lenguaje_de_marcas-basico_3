@@ -1,0 +1,181 @@
+html{
+    background-image: url("../img/fondo.jpg");
+}
+
+
+#logo{
+    width: 100px;
+}
+
+#divLogo{
+    text-align: center;
+    background-color: whitesmoke;
+    box-shadow: 0px -5px 10px 15px rgba(0,0,0,0.5);
+    border-radius: 25PX;
+    padding: 10px 0px 10px 0px;
+    
+}
+
+/* --modificamos la lista etera como conjunto 'ul'-- */
+#listaNav{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+/* --estamos modificando el `li' lineas de la lista-- */
+#listaNav li{
+flex-direction: row;
+background-color: whitesmoke;
+box-shadow: 0px -5px 10px 15px rgba(0,0,0,0.2);
+border-radius: 25PX;
+padding: 10px 5px 10px 5px;
+width: 25%;
+justify-content: center;
+}
+/* --el estilo se va aplicar dentro de todos los ul-- */
+#listaNav a{
+text-decoration: none;
+display: block;
+font-weight:bold;
+color:rgb(7, 0, 8);
+}
+/* para cambiar los estilos pasando por encima el raton */
+
+#listaNav li:hover{
+background-color:rgb(196, 0, 136,0.5) ;
+
+
+}
+
+
+#titulo{
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#detalles {
+    width: 100%;
+    max-width: 400px;
+    background-color: rgb(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+#detalles h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+p {
+    font-size: 18px;
+    color: #333;
+}
+
+#boton {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#button {
+    background-color: rgb(196, 0, 136,0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#button:hover {
+    background-color: #0056b3;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        justify-content: space-between;
+    }
+
+    #detalles {
+        margin-top: 0;
+    }
+}
+
+
+#divFooter{
+    text-align: right;
+    background-color: whitesmoke;
+    box-shadow: 0px -5px 10px 15px rgba(0,0,0,0.5);
+    border-radius: 25PX;
+    padding: 10px 0px 10px 0px;
+    
+}
+    
+    footer {
+        margin-top: 2%;
+    bottom: 0;
+    width: 100%;
+}
+    
+    #divFooter p {
+    margin-left:25px ;
+    margin-right:25px ;
+}
+
+@media (max-width: 700px) {
+
+    #listaNav{
+        flex-direction: column;
+        margin-right: 10px;
+    }
+
+    #listaNav li{
+        width: 100%;
+    }
+
+
+
+}
