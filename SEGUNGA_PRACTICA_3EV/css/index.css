@@ -1,0 +1,95 @@
+html {
+    background-image: url("../img/fondo.jpg");
+}
+
+body {
+    font-family: Arial, sans-serif;
+  }
+
+#logo {
+    width: 100px;
+}
+
+#divLogo {
+    text-align: center;
+    background-color: whitesmoke;
+    box-shadow: 0px -5px 10px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    padding: 10px 0;
+}
+
+#listaNav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#listaNav li {
+    background-color: whitesmoke;
+    box-shadow: 0px -5px 10px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    padding: 10px 5px;
+}
+
+#listaNav a {
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+    color: rgb(7, 0, 8);
+}
+
+#listaNav li:hover {
+    background-color: rgba(196, 0, 136, 0.5);
+    cursor: pointer;
+}
+
+#infoGame p {
+    margin-bottom: 50px;
+    color: black;
+    text-align: center;
+    line-height: 50px;
+}
+
+#infoGame {
+    padding: 50px 20px;
+    background-color: rgba(153, 50, 204, 0.5);
+    border-radius: 50px;
+    margin: 0 25px;
+}
+
+#divFooter {
+    text-align: right;
+    background-color: whitesmoke;
+    box-shadow: 0px -5px 10px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    padding: 10px 0px;
+}
+
+footer {
+    margin-top: 2%;
+    bottom: 0;
+    width: 100%;
+}
+
+#divFooter p {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+@media (max-width: 700px) {
+    #infoGame {
+        margin-bottom: 100px;
+    }
+
+    #listaNav {
+        grid-template-columns: 1fr;
+        margin-right: 10px;
+    }
+
+    #listaNav li {
+        width: 100%;
+    }
+}

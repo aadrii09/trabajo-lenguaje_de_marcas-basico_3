@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/registro.css">
+   
+    <title>Registro</title>
+</head>
+<header>
+    <div id="divLogo">
+        <img src="../img/logoGame.png" alt="LOGO" id="logo">
+    </div>
+    <nav>
+        <ul id="listaNav">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="registro.html">Registro</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <form action="registro.html" id="formulario">
+        <table align="center">
+            <tr>
+                <td><label for="Usuario">Usuario</label></td>
+                <td>
+                    <div>
+                        <input type="text" name="Usuario"  id="Usuario">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="Contraseña">Contraseña(Obligatorio)</label></td>
+                <td>
+                    <div>
+                        <input type="password" name="Contraseña" required id="Contraseña">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="correoElectronico">Correo electrónico</label></td>
+                <td>
+                    <div>
+                        <input type="text" name="correoElectronico" id="correoElectronico">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="nombre">Nombre</label></td>
+                <td>
+                    <div>
+                        <input type="text" name="nombre"  id="nombre">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="primerApellido">Primer Apellido</label></td>
+                <td>
+                    <div>
+                        <input type="text" name="primerApellido"  id="primerApellido">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="segundoApellido">Segundo Apellido</label></td>
+                <td>
+                    <div>
+                        <input type="text" name="segundoApellido"  id="segundoApellido">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="fechaDeNacimiento">Fecha de Nacimiento</label></td>
+                <td>
+                    <div>
+                        <input type="date" name="fechaDeNacimiento"  id="fechaDeNacimiento">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="telefono">Telefono móvil</label></td>
+                <td>
+                    <div>
+                        <input type="number" name="telefono"  id="telefono">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="direccion">Dirección</label></td>
+                <td>
+                    <div>
+                        <textarea name="direcciom" id="direccion" cols="22" rows="2"></textarea>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" value="Registrarse" id="Registrarse"></td>
+            </tr>
+            
+        </table>
+    </form>
+</body>
+<footer>
+    <div id="divFooter">
+        <p>Página hecha por  <span id="nombre">ADRIAN CASTRO BEIRO</span>(adrian.castro@liceo.net)</p>
+        <p>© 2024. Todos los derechos reservados</p>
+    </div>
+</footer>
+</html>

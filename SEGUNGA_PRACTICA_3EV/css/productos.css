@@ -1,0 +1,163 @@
+html {
+    background-image: url("../img/fondo.jpg");
+}
+
+#logo {
+    width: 100px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+#divLogo {
+    text-align: center;
+    background-color: whitesmoke;
+    box-shadow: 0px -5px 10px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    padding: 10px 0;
+}
+
+#listaNav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#listaNav li {
+    background-color: whitesmoke;
+    box-shadow: 0px -5px 10px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    padding: 10px 5px;
+}
+
+#listaNav a {
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+    color: rgb(7, 0, 8);
+}
+
+#listaNav li:hover {
+    background-color: rgba(196, 0, 136, 0.5);
+    cursor: pointer;
+}
+
+#titulo {
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.image-container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#detalles {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#detalles h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+p {
+    font-size: 18px;
+    color: #333;
+}
+
+#boton {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#button {
+    background-color: rgb(196, 0, 136, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#button:hover {
+    background-color: #0056b3;
+}
+
+
+footer {
+    margin-top: 2%;
+    bottom: 0;
+    width: 100%;
+}
+
+#divFooter {
+    text-align: right;
+    background-color: whitesmoke;
+    box-shadow: 0px -5px 10px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    padding: 10px 0px 10px 0px;
+}
+
+#divFooter p {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+@media screen and (min-width: 700px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #detalles {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    #listaNav {
+        grid-template-columns: 1fr;
+        margin-right: 10px;
+    }
+
+    #listaNav li {
+        width: 100%;
+    }
+}
